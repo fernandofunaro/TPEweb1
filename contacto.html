@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    </head>
+
+    <body>
+
+        <header>
+            <div class="btn_menu"><a>MENÚ</a></div>
+        </header>
+        <nav class="menu">
+            <ul class="navigation">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="pedido.html">Hacer pedido</a></li>
+                <li><a href="contacto.html">contacto</a></li>
+            </ul>
+        </nav>
+        <table class="listaContactos">
+            <tbody>
+                <tr>
+                    <td><img src="imagenes/pinmapLogo.png" alt="WPlogo"></td>
+                    <td><a href="https://maps.app.goo.gl/xCDq9RWkHcKnPVeC6">Campus Universitario 2932</a></td>
+                </tr>
+                <tr>
+                    <td><img src="imagenes/phoneLogo.png" alt="pinMap"></td>
+                    <td>24949464</td>
+                </tr>
+                <tr>
+                    <td><img src="imagenes/WPlogo.png" alt="WPlogo"></td>
+                    <td><a href="https://wa.me/2494645607">Envianos un Whatsapp</a></td>
+                </tr>
+                <tr>
+                    <td><a href="http://instagram.com/avicolawebitos"><img src="imagenes/IGlogo.png" alt=""></a></td>
+                    <td><a href="http://instagram.com/avicolaWebitos">@avicolaWebitos</a></td>
+                </tr>
+                <tr>
+                    <td><img src="imagenes/PedidosYaLogo.png" alt="WPlogo"></td>
+                    <td><a href="https://pedidosya.com.ar">PedidosYA</a></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <section class="formularioSignup">
+            <h1>¡Sumate a nuestra base de datos y recibí nuestras promociones!</h1>
+            <ul>
+                <li>Correo Electrónico: <input type="text"></li>
+                <li>Contraseña: <input type="password"></li>
+                <li>Repetir Contraseña: <input type="password"></li>
+                <li> Nombre y apellido: <input type="text"></li>
+                <li>Teléfono celular: <input type="number"></li>
+                <li> Ciudad: <input type="text" class="formularioAclaraciones"></li>
+                <li>¿Como nos conociste?
+                    <select id="comonosConociste" name="comonosConociste">
+                        <option value="RedesSociales">Redes Sociales</option>
+                        <option value="Recomendación">Recomendación</option>
+                        <option value="PublicidadCalle">Publicidad en la calle</option>
+                        <option value="Otro">Otro</option>
+                    </select>
+                </li>
+                <li>
+                    <h2 id="captchaGenerator"></h2>
+                    <h3>Ingrese el Captcha para verificar</h3>
+                    <input type="number" id="ingresarCaptcha">
+                    <button id="btn-refrescar">Refrescar Captcha</button>
+                </li>
+                <li> <button id="verificarCaptcha">Verificar Captcha</button></li>
+                <li>
+                    <h3 id="resultadoCaptcha"></h3>
+                </li>
+                <button id="btn-signup"><a href="sucripto.html">Suscribirse</a></button>
+            </ul>
+        </section>
+        </section>
+
+        <script src="js/contacto_script.js"></script>
+    </body>
+</html>

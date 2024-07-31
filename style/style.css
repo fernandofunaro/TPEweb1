@@ -1,0 +1,470 @@
+body {
+    background-color: rgb(56, 40, 11);
+}
+
+.container {
+    background-color: rgb(255, 208, 0);
+}
+
+header {
+    background-image: url(../imagenes/banner2.jpg);
+    background-size: contain;
+    padding: 5%;
+    color: bisque;
+}
+
+.btn_menu {
+    background-color: rgb(165, 116, 42);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    width: fit-content;
+    padding: 15px;
+}
+
+.btn_menu a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu {
+    border-bottom: 4px solid rgb(248, 226, 153);
+    width: 100%;
+    display: flex;
+    background-color: rgb(87, 61, 21);
+}
+
+ul.navigation {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    display: none;
+    flex-direction: column;
+}
+
+
+ul.navigation.show {
+    display: flex;
+}
+
+ul.navigation li {
+    list-style: none;
+    margin: 0px 0px;
+    padding: 15px 20px;
+    text-transform: uppercase;
+}
+
+ul.navigation li a {
+    text-decoration: none;
+    color: white;
+}
+
+ul.navigation li:hover {
+    background-color: gray;
+}
+
+.portada {
+    background-color: rgba(255, 208, 0, 0.644);
+    margin: 2%;
+    display: flex;
+    justify-content: center;
+}
+
+.portada img {
+    max-width: 100%;
+}
+
+.descripcionEmpresa {
+    display: flex;
+    background-color: rgb(165, 116, 42);
+}
+
+.descripcionEmpresa p {
+    /* font-family: Georgia, 'Times New Roman', Times, serif; */
+    text-align: justify;
+    margin: 20px;
+    font-stretch: condensed;
+    color: wheat;
+    
+}
+
+.marcaEmpresa{
+    color: white;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+
+footer {
+    background-color: blanchedalmond;
+    text-align: center;
+    padding: 40px;
+    padding-left: 5%;
+}
+
+/* Screenshots */
+
+.screenShots{
+    background-color: #ff7504;
+    margin: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    color: #3f1900;
+}
+
+
+.screenShots img{
+    width: 40px;
+}
+
+.screenShots a{
+    color: #3f1900;
+}
+
+
+
+/* Sección Pedidos */
+
+.listadePrecios {
+    background-color: rgb(124, 75, 2);
+    text-align: center;
+    color: blanchedalmond;
+    padding: 10px;
+}
+
+.listadePrecios h1 {
+    text-align: center;
+}
+
+.seccionPedidos table {
+    width: 50%;
+    border-collapse: collapse;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+}
+
+.seccionPedidos table th,
+td {
+    border: 1px solid #ddd;
+    color: rgb(0, 0, 0);
+    padding: 8px;
+    text-align: left;
+}
+
+.seccionPedidos table th {
+    background-color: #8a1313;
+    color: white;
+}
+
+.seccionPedidos table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.seccionPedidos table tr:nth-child(odd) {
+    background-color: #ffd904;
+}
+
+.seccionPedidos table tr:hover {
+    background-color: #ddd;
+}
+
+.planillaPedido {
+    background-color: rgb(248, 182, 0);
+}
+
+
+
+.plataformaPedido {
+    display: flex;
+    flex-direction: column;
+}
+
+.seleccionarProducto {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+}
+
+.seleccionarCantidad {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: small;
+}
+
+.botonera {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.botonera button {
+    padding: 20px;
+    margin: 10px;
+    color: white;
+    font-weight: bold;
+    background-color: #8a1313;
+}
+
+.resultadoPedido {
+
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr;
+    text-align: center;
+}
+
+
+#listadoProductos {
+    grid-column: 1;
+    text-align: right;
+    list-style: none;
+
+}
+
+#listadoCantidades {
+    grid-column: 2;
+    text-align: left;
+    list-style: none;
+
+}
+
+#precioTotal {
+    color: rgb(204, 58, 0);
+    text-align: center;
+
+}
+
+#realizarPedidoLink {
+    text-align: center;
+    margin: 3%;
+    padding: 3%;
+    color: wheat;
+    text-transform: uppercase;
+    background-color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Formulario Envios */
+.formularioEnvio {
+    background-color: rgb(83, 44, 0);
+    color: bisque;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.formularioEnvio h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.formularioEnvio ul {
+    width: 100%;
+    text-align: center;
+
+}
+
+.formularioEnvio li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 15px;
+    list-style: none;
+}
+
+.formularioEnvio input {
+    max-width: 80%;
+    padding: 10px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+.formularioAclaraciones {
+    padding: 30%;
+    width: 100%;
+    height: max-content;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+
+
+/* Seccion Contactos*/
+table.listaContactos {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: rgb(255, 187, 0);
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+}
+
+
+table.listaContactos td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+
+    text-align: left;
+    color: white;
+    font-size: large;
+}
+
+table.listaContactos td:first-child {
+    width: 50px;
+}
+
+table.listaContactos img {
+    width: 40px;
+    height: auto;
+    vertical-align: middle;
+}
+
+table.listaContactos a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+table.listaContactos a:hover {
+    text-decoration: underline;
+}
+
+/* Contacto - Formulario Signup */
+.formularioSignup {
+    background-color: rgb(63, 18, 0);
+    color: bisque;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.formularioSignup h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.formularioSignup ul {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.formularioSignup li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.formularioSignup input {
+
+    width: 80%;
+    padding: 10px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+.formularioAclaraciones {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Captcha */
+#captchaGenerator {
+    text-align: center;
+    color: red;
+    margin: 20px 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#btn-refrescar {
+    background-color: greenyellow;
+    width: auto;
+
+}
+
+.formularioSignup button {
+    display: block;
+    width: 250px;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: #ffd900;
+    color: rgb(75, 24, 0);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.formularioSignup button:hover {
+    background-color: #45a049;
+}
+
+#btn-signup {
+    background-color: red;
+    display: none;
+}
+
+#btn-signup a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+@media screen and (min-width: 900px) {
+
+    header {
+        background-image: url(../imagenes/banner.jpg);
+    }
+
+    .btn_menu {
+        display: none;
+    }
+
+    ul.navigation {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        justify-content: center;       
+    }
+
+
+    .portada img {
+
+        margin: 1%;
+        max-width: 40%;
+        max-height: auto;
+    }
+
+    .descripcionEmpresa p {
+        /* font-family: Georgia, 'Times New Roman', Times, serif; */
+        text-align: justify;
+        font-size: clamp(1rem, 1.5vw, 2rem); 
+        margin: 20px;
+        font-stretch: condensed;
+        color: wheat;
+        
+    }
+
+}
